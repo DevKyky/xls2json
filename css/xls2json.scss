@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
+
+* {
+    font-family: 'Radio Canada', sans-serif;
+}
+
+body {
+    background: #36393E;
+    color: whitesmoke;
+}
+
+pre {
+    width: min-content;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    tab-size: 4;
+
+    &:hover, &:focus {
+        width: min-content;
+    }
+}
+code {
+    display: block;
+    padding: 1.25rem;
+    color: burlywood;
+    background: #424549;
+}
+
+.has-centered {
+    text-align: center;
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+}
+
+@import './color';
+@import './button';

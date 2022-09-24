@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>DevKyky | XLS to JSON</title>
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/xls2json.css">    
+</head>
+<body>
+    
+    <main>
+        
+        <h1 class="has-centered">DevKyky | XSL to JSON</h1>
+        
+        <div class="has-centered">
+            <input type="file" id="xlsFile" accept=".xls,.xlsx">
+        </div>
+
+        <div class="has-centered">
+            <p id="message"></p>
+        </div>
+        
+        <div class="has-centered">
+            <button class="button" id="buttonUpload">Converter</button>
+        </div>
+        
+        <div id="jsonView">
+            <pre><code id="jsonData"></code></pre>
+
+            <div class="has-centered">
+                <button class="button" id="copyClipboard">Copy to clipboard</button>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="./js/converter.js"></script>
+    <script src="./js/copyToClipboard.js"></script>
+</body>
+</html>
